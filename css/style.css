@@ -1,0 +1,115 @@
+:root {
+  /* COLORS */
+  --clr-primary: #fafafa;
+  --clr-secondary: #3164e4;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+
+  /* TYPOGRAPHY */
+  --fs-desktop-xxl: 80px;
+  --fs-desktop-xl: 48px;
+  --fs-desktop-lg: 40px;
+
+  --fs-desktop-md: 20px;
+  --fs-desktop-sm: 18px;
+  --fs-desktop-xs: 16px;
+  --fs-desktop-xxs: 12px;
+
+  /* IMAGES */
+  --background-hero: ;
+  --background-cta: ;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVIGATION BAR */
+/* ============================================================================================== */
+header {
+  width: 100%;
+  padding: 0 1rem;
+
+  position: absolute;
+  z-index: 300;
+  top: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  object-fit: cover;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav__link {
+  color: var(--clr-primary);
+  font-size: var(--fs-desktop-sm);
+  font-weight: 500;
+}
+
+
+/* HERO SECTION */
+/* ============================================================================================== */
+
+.hero {
+  padding: 18em 0;
+  background: url("/assets/background/puerto-vallarta-bg-hero.webp"), #000000;
+  background-size: cover;
+}
+
+.hero-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__title {
+  width: 86%;
+  margin: 0 auto;
+
+  font-size: var(--fs-desktop-xxl);
+  font-weight: 600;
+  color: var(--clr-primary);
+  line-height: 1;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 2rem;
+}
+
+.hero__button {
+  display: inline-block;
+  width: 240px;
+  padding: 15px 0;
+
+  font-size: var(--fs-desktop-sm);
+  font-weight: 500;
+
+  background-color: var(--clr-primary);
+  border-radius: 5px;
+}
+
+.hero__button:hover {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
