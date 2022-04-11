@@ -40,6 +40,31 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.button-default {
+  display: inline-block;
+  width: 240px;
+  padding: 15px 0;
+  text-align: center;
+
+  font-size: var(--fs-desktop-sm);
+  font-weight: 500;
+
+  background-color: var(--clr-primary);
+  border-radius: 5px;
+}
+
+.button-default--dark {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+
+.button-default:hover {
+  transition: 0.2s;
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+
 /* NAVIGATION BAR */
 /* ============================================================================================== */
 header {
@@ -83,14 +108,18 @@ header {
 /* ============================================================================================== */
 
 .hero {
-  padding: 18em 0;
+  padding: 18em 0 15rem 0;
   background: url("/images/puerto-vallarta-bg-hero.webp"), #000000;
   background-size: cover;
 }
 
+.hero-small {
+  padding: 8em 0 10rem 0;
+}
+
 .hero-wrapper {
   max-width: 1400px;
-  
+
   margin: 0 auto;
   text-align: center;
 }
@@ -113,19 +142,47 @@ header {
   gap: 2rem;
 }
 
-.hero__button {
-  display: inline-block;
-  width: 240px;
-  padding: 15px 0;
+/* ABOUT SECTION */
+/* ============================================================================================== */
+.about {
+  padding: 1rem;
+}
 
-  font-size: var(--fs-desktop-sm);
+.about-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 6rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-wrapper--reverse {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+
+.about__image {
+  max-width: 620px;
+  object-fit: cover;
+}
+
+.about__title {
+  font-size: var(--fs-desktop-xl);
   font-weight: 500;
-
-  background-color: var(--clr-primary);
-  border-radius: 5px;
+  line-height: 1;
+  width: 90%;
+  margin-bottom: 3rem;
 }
 
-.hero__button:hover {
-  background-color: var(--clr-secondary);
-  color: var(--clr-primary);
+.about__info {
+  font-size: var(--fs-desktop-md);
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
+
+/* PLATFORMS  */
+/* ============================================================================================== */
