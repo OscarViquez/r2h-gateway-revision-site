@@ -58,7 +58,6 @@ body {
   color: var(--clr-white);
 }
 
-
 .button-default:hover {
   transition: 0.2s;
   background-color: var(--clr-secondary);
@@ -104,12 +103,16 @@ header {
   font-weight: 500;
 }
 
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 /* HERO SECTION */
 /* ============================================================================================== */
 
 .hero {
   padding: 18em 0 15rem 0;
-  background: url("/images/puerto-vallarta-bg-hero.webp"), #000000;
+  background: url("/images/bg-puerto-vallarta-hero.webp"), #000000;
   background-size: cover;
 }
 
@@ -186,3 +189,55 @@ header {
 
 /* PLATFORMS  */
 /* ============================================================================================== */
+.platforms {
+  padding: 6rem 0 8rem 0;
+}
+
+.platforms-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.platforms__title {
+  font-size: var(--fs-desktop-lg);
+  font-weight: 500;
+  margin-bottom: 3.4rem;
+}
+
+.platforms-images {
+  max-width: 1294px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CALL TO ACTION  */
+/* ================================================================== */
+.cta-banner {
+  margin: 2rem 0;
+}
+
+.cta-banner-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  border-radius: 10px;
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("/images/bg-call-to-action-banner.jpg");
+  background-size: cover;
+
+  text-align: center;
+}
+
+.cta-banner__title {
+  max-width: 500px;
+  margin: 0 auto 3rem auto;
+
+  font-size: var(--fs-desktop-lg);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--clr-white);
+}
