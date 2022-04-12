@@ -10,107 +10,178 @@
     <!-- META DATA FOR SEO >> GOOGLE DESCRIPTION  -->
     <!-- ..................................................................... -->
     <meta charset="UTF-8">
-    <meta name="description"
-        content="">
+    <meta name="description" content="">
 
-    <meta name="keywords"
-        content="">
+    <meta name="keywords" content="">
 
     <!-- CSS FILES  -->
     <!-- ..................................................................... -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- GOOGLE FONTS -->
-    <!-- ..................................................................... -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 
     <!-- FONT AWESOME  -->
     <!-- ..................................................................... -->
     <script src="https://kit.fontawesome.com/671c0ca6ff.js" crossorigin="anonymous"></script>
 
-  
 </head>
 
 <body>
 
-    <!-- NAVIGATION START ==================================================================================== -->
-    <header>
 
+    <!-- NAVIGATION START  -->
+    <!-- ================================================================ -->
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <img alt="Puerto Vallarta Logo" src="/images/puerto-vallarta-logo-transparent.png" width="120px">
+            </div>
+
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/to-do.html" class="nav__link">
+                            Things To-Do
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact.html" class="nav__link">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- MAIN CONTENT ==================================================================================== -->
 
     <main>
+        <!-- HERO BANNER  -->
+        <!-- ================================================================ -->
+        <section class="hero">
+            <div class="hero-wrapper">
+                <h1 class="hero__title">
+                    Experience The Beauty that is Puerto Vallarta
+                </h1>
 
+                <div class="hero-buttons">
+                    <a href="#" class="button-default">
+                        Learn More
+                    </a>
+                    <a href="#" class="button-default">
+                        Book Now
+                    </a>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER START ========================================================================================== -->
+    <!-- FOOTER START  -->
+    <!-- ================================================================ -->
     <footer>
+        <section class="footer-container">
+            <nav class="footer-nav">
+                <div class="footer-nav-wrapper footer-logos">
+                    <img class="footer__logo" src="/images/puerto-vallarta-logo.png" alt="logo of Puerto Vallarta" width="120px">
+                    
+                    <ul class="footer-socials">
+                        <li class="footer-social">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="footer-social">
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-social">
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-social">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-wrapper">
+                    <h3 class="footer-nav__title">
+                        Pages
+                    </h3>
+                    
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="/pages/to-do.html" class="footer-nav__link">
+                                Things To Do
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="/pages/contact.html" class="footer-nav__link">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="/pages/booking.html" class="footer-nav__link">
+                                Book Now
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="/pages/about.html" class="footer-nav__link">
+                                About us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-wrapper">
+                    <h3 class="footer-nav__title">
+                        Links
+                    </h3>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="https://www.airbnb.com/puerto-vallarta-mexico/stays" class="footer-nav__link">
+                                Airbnb
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="https://www.tripadvisor.com/Tourism-g150793-Puerto_Vallarta-Vacations.html" class="footer-nav__link">
+                                Trip Advisor
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="https://www.expedia.com/Puerto-Vallarta.d180016.Destination-Travel-Guides" class="footer-nav__link">
+                                Expedia
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="https://www.kayak.com/packages/puerto-vallarta" class="footer-nav__link">
+                                Kayak
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </section>
+
+
+        <section class="footer-copyright">
+            <p >
+                OSHV Project &copy; 2022
+            </p>
+        </section>
 
     </footer>
 
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puerto Vallarta</title>
-
-    <!-- META DATA FOR SEO >> GOOGLE DESCRIPTION  -->
-    <!-- ..................................................................... -->
-    <meta charset="UTF-8">
-    <meta name="description"
-        content="">
-
-    <meta name="keywords"
-        content="">
-
-    <!-- CSS FILES  -->
-    <!-- ..................................................................... -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- GOOGLE FONTS -->
-    <!-- ..................................................................... -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- FONT AWESOME  -->
-    <!-- ..................................................................... -->
-    <script src="https://kit.fontawesome.com/671c0ca6ff.js" crossorigin="anonymous"></script>
-
-  
-</head>
-
-<body>
-
-    <!-- NAVIGATION START ==================================================================================== -->
-    <header>
-
-    </header>
-
-    <!-- MAIN CONTENT ==================================================================================== -->
-
-    <main>
-
-    </main>
-
-    <!-- FOOTER START ========================================================================================== -->
-    <footer>
-
-    </footer>
 
 </body>
 

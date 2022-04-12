@@ -3,8 +3,10 @@
   /* COLORS */
   --clr-primary: #fafafa;
   --clr-secondary: #3164e4;
-  --clr-black: #000000;
+  --clr-black: #0e0e0e;
   --clr-white: #ffffff;
+  --clr-gray: #f8f8f7;
+
 
   /* TYPOGRAPHY */
   --fs-desktop-xxl: 80px;
@@ -39,6 +41,11 @@ a {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+
+/* ================================================================================================ */
+                                    /* REUSEABLE COMPONENTS */  
+/* ================================================================================================ */
 
 .button-default {
   display: inline-block;
@@ -145,6 +152,142 @@ header {
   gap: 2rem;
 }
 
+
+/* CALL TO ACTION  */
+/* ================================================================== */
+.cta-banner {
+  margin: 2rem 1rem;
+}
+
+.cta-banner-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  border-radius: 10px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("/images/bg-call-to-action-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.cta-banner__title {
+  max-width: 500px;
+  margin: 0 auto 3rem auto;
+
+  font-size: var(--fs-desktop-lg);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--clr-white);
+}
+
+/* FOOTER */
+/* ================================================================== */
+footer {
+  margin-top: 6rem;
+  padding: 5rem 1rem;
+
+  background: #0e0e0e;
+  color: #ffffff;
+}
+
+
+.footer-nav {
+  max-width: 1050px;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.footer-nav-wrapper {
+  width: 33.3%;
+  height: auto;
+}
+
+.footer-nav__title {
+  font-size: var(--fs-desktop-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-nav__item {
+  margin-bottom: 1rem;
+}
+
+.footer-nav__link {
+  font-size: var(--fs-desktop-xxs);
+  font-weight: 400;
+}
+
+.footer-nav__link:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: inline-block;
+  font-size: 22px;
+  margin-right: .8rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer-copyright p {
+  font-size: var(--fs-desktop-xxs);
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .footer-nav {
+    flex-flow: column wrap;
+  }
+}
+
+/* ================================================================================================ */
+                                    /* WEBSITE SECTIONS  */  
+/* ================================================================================================ */
+
+
+
+/* PLATFORMS  */
+/* ============================================================================================== */
+.platforms {
+  padding: 6rem 0 8rem 0;
+}
+
+.platforms-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.platforms__title {
+  font-size: var(--fs-desktop-lg);
+  font-weight: 500;
+  margin-bottom: 3.4rem;
+}
+
+.platforms-images {
+  max-width: 1294px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .platforms-images{
+    flex-flow: column wrap;
+  }
+}
+
+
 /* ABOUT SECTION */
 /* ============================================================================================== */
 .about {
@@ -187,57 +330,3 @@ header {
   margin-bottom: 3rem;
 }
 
-/* PLATFORMS  */
-/* ============================================================================================== */
-.platforms {
-  padding: 6rem 0 8rem 0;
-}
-
-.platforms-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.platforms__title {
-  font-size: var(--fs-desktop-lg);
-  font-weight: 500;
-  margin-bottom: 3.4rem;
-}
-
-.platforms-images {
-  max-width: 1294px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-/* CALL TO ACTION  */
-/* ================================================================== */
-.cta-banner {
-  margin: 2rem 0;
-}
-
-.cta-banner-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 5rem 0;
-  border-radius: 10px;
-  
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-    url("/images/bg-call-to-action-banner.jpg");
-  background-size: cover;
-
-  text-align: center;
-}
-
-.cta-banner__title {
-  max-width: 500px;
-  margin: 0 auto 3rem auto;
-
-  font-size: var(--fs-desktop-lg);
-  font-weight: 500;
-  line-height: 1.1;
-  color: var(--clr-white);
-}
