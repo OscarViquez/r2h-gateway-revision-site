@@ -341,9 +341,6 @@ footer {
   max-width: 128px;
 }
 
-.platform-link{
-  /* width: 20%; */
-}
 
 @media (max-width: 621px) {
   .platform__image{
