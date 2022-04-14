@@ -10,9 +10,9 @@
     <!-- META DATA FOR SEO >> GOOGLE DESCRIPTION  -->
     <!-- ..................................................................... -->
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Project Website on Puerto Vallarta, Mexico">
 
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Mexico,Puerto Vallarta,Vacation,Puerto Vallarta Mexico">
 
     <!-- CSS FILES  -->
     <!-- ..................................................................... -->
@@ -66,10 +66,10 @@
                 </h1>
 
                 <div class="hero-buttons">
-                    <a href="#" class="button-default">
+                    <a href="/pages/to-do.html" class="button-default">
                         Learn More
                     </a>
-                    <a href="#" class="button-default">
+                    <a href="/pages/booking.html" class="button-default">
                         Book Now
                     </a>
                 </div>
@@ -81,9 +81,10 @@
         <!-- ================================================================ -->
         <section class="about">
             <div class="about-wrapper">
-                <img class="about__image" src="/images/puerto-villarta-about-image.png"
+                <img class="about__image" id="about__image--left" src="/images/puerto-villarta-about-image.png"
                     alt="image of the beautiful coast">
-                <div class="about-copy">
+
+                <div class="about-copy about-column">
                     <h2 class="about__title">
                         One of the best cities to vacay awaits you!
                     </h2>
@@ -96,7 +97,7 @@
                         Because of the area's amazing climate, weather, and its lush, scenic environment, it is no
                         wonder why it is one of the top 10 most visited tourist destinations in the country.
                     </p>
-                    <a href="#" class="button-default button-default--dark" aria-labelledby="pic">
+                    <a href="/pages/about.html" class="button-default button-default--dark" aria-labelledby="pic">
                         Learn More
                     </a>
                 </div>
@@ -107,8 +108,8 @@
         <!-- ================================================================ -->
         <section class="about about-two">
             <div class="about-wrapper about-wrapper--reverse">
-                <img src="/images/home-cards.png" alt="Images of different places around Puerto Vallarta"
-                    class="about__image">
+                <img src="/images/home-cards.png" id="about__image--right"
+                    alt="Images of different places around Puerto Vallarta" class="about__image">
                 <div class="about-copy--reverse">
                     <h2 class="about__title">
                         Stunning beaches, intricate architecture, and savory food?
@@ -117,12 +118,10 @@
                     <p class="about__info">
                         Puerto Vallarta not only offers some of the best views you will ever see, it also offers
                         blissful, sandy beaches and top restaurants serving authentically delicious food.
-                    </p>
-                    <p class="about__info">
                         In addition to that, there are an abundance of things to do and see! These include: historic
                         landmarks, stunning mountains, intricate architecture, and more!
                     </p>
-                    <a href="#" class="button-default button-default--dark" aria-labelledby="pic">
+                    <a href="/pages/to-do.html" class="button-default button-default--dark" aria-labelledby="pic">
                         Let's Explore
                     </a>
                 </div>
@@ -139,24 +138,23 @@
                 </h2>
 
                 <div class="platforms-images">
-                    <a href="https://www.airbnb.com/puerto-vallarta-mexico/stays">
-                        <img class="platforms__image" src="/images/icon-airbnb.png" alt="App icon of Airbnb"
-                            width="128px">
+                    <a class="platform-link" href="https://www.airbnb.com/puerto-vallarta-mexico/stays">
+                        <img class="platform__image" src="/images/icon-airbnb.png" alt="App icon of Airbnb">
                     </a>
-                    <a href="https://www.tripadvisor.com/Tourism-g150793-Puerto_Vallarta-Vacations.html">
-                        <img class="platforms__image" src="/images/icon-tripadvisor.png" alt="App icon of Trip Advisor"
-                            width="128px">
+                    <a class="platform-link"
+                        href="https://www.tripadvisor.com/Tourism-g150793-Puerto_Vallarta-Vacations.html">
+                        <img class="platform__image" src="/images/icon-tripadvisor.png" alt="App icon of Trip Advisor">
                     </a>
-                    <a href="https://www.kayak.com/packages/puerto-vallarta">
-                        <img class="platforms__image" src="/images/icon-kayak.png" alt="App icon of Kayak"
-                            width="128px">
+                    <a class="platform-link" href="https://www.kayak.com/packages/puerto-vallarta">
+                        <img class="platform__image" src="/images/icon-kayak.png" alt="App icon of Kayak">
                     </a>
-                    <a href="https://www.expedia.com/Puerto-Vallarta.d180016.Destination-Travel-Guides">
-                        <img class="platforms__image" src="/images/icon-expedia.png" alt="App icon of Expedia"
-                            width="128px">
+                    <a class="platform-link"
+                        href="https://www.expedia.com/Puerto-Vallarta.d180016.Destination-Travel-Guides">
+                        <img class="platform__image" src="/images/icon-expedia.png" alt="App icon of Expedia">
                     </a>
-                    <a href="https://www.vrbo.com/vacation-rentals/mexico/mexican-riviera/jalisco/puerto-vallarta">
-                        <img class="platforms__image" src="/images/icon-vrbo.png" alt="App icon of Vrbo" width="128px">
+                    <a class="platform-link"
+                        href="https://www.vrbo.com/vacation-rentals/mexico/mexican-riviera/jalisco/puerto-vallarta">
+                        <img class="platform__image" src="/images/icon-vrbo.png" alt="App icon of Vrbo">
                     </a>
                 </div>
 
@@ -185,8 +183,9 @@
         <section class="footer-container">
             <nav class="footer-nav">
                 <div class="footer-nav-wrapper footer-logos">
-                    <img class="footer__logo" src="/images/puerto-vallarta-logo.png" alt="logo of Puerto Vallarta" width="120px">
-                    
+                    <img class="footer__logo" src="/images/puerto-vallarta-logo.png" alt="logo of Puerto Vallarta"
+                        width="120px">
+
                     <ul class="footer-socials">
                         <li class="footer-social">
                             <a href="#">
@@ -215,7 +214,7 @@
                     <h3 class="footer-nav__title">
                         Pages
                     </h3>
-                    
+
                     <ul class="footer-nav__list">
                         <li class="footer-nav__item">
                             <a href="/pages/to-do.html" class="footer-nav__link">
@@ -251,12 +250,14 @@
                             </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a href="https://www.tripadvisor.com/Tourism-g150793-Puerto_Vallarta-Vacations.html" class="footer-nav__link">
+                            <a href="https://www.tripadvisor.com/Tourism-g150793-Puerto_Vallarta-Vacations.html"
+                                class="footer-nav__link">
                                 Trip Advisor
                             </a>
                         </li>
                         <li class="footer-nav__item">
-                            <a href="https://www.expedia.com/Puerto-Vallarta.d180016.Destination-Travel-Guides" class="footer-nav__link">
+                            <a href="https://www.expedia.com/Puerto-Vallarta.d180016.Destination-Travel-Guides"
+                                class="footer-nav__link">
                                 Expedia
                             </a>
                         </li>
@@ -274,7 +275,7 @@
 
 
         <section class="footer-copyright">
-            <p >
+            <p>
                 OSHV Project &copy; 2022
             </p>
         </section>

@@ -7,7 +7,6 @@
   --clr-white: #ffffff;
   --clr-gray: #f8f8f7;
 
-
   /* TYPOGRAPHY */
   --fs-desktop-xxl: 80px;
   --fs-desktop-xl: 48px;
@@ -17,6 +16,18 @@
   --fs-desktop-sm: 18px;
   --fs-desktop-xs: 16px;
   --fs-desktop-xxs: 12px;
+
+
+  --fs-tablet-xxl: 55px;
+  --fs-tablet-xl: 38px;
+  --fs-tablet-lg: 32px;
+  --fs-tablet-md: 16px;
+
+  --fs-mobile-xxl: 42px;
+  --fs-mobile-xl: 32px;
+  --fs-mobile-lg: 26px;
+  --fs-mobile-md: 16px;
+
 
   /* IMAGES */
   --background-hero: ;
@@ -42,9 +53,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
 /* ================================================================================================ */
-                                    /* REUSEABLE COMPONENTS */  
+/* ............................. REUSEABLE COMPONENTS .............................................. */
 /* ================================================================================================ */
 
 .button-default {
@@ -114,6 +124,12 @@ header {
   text-decoration: underline;
 }
 
+@media (max-width: 620px) {
+  nav {
+    display: none;
+  }
+}
+
 /* HERO SECTION */
 /* ============================================================================================== */
 
@@ -153,6 +169,25 @@ header {
 }
 
 
+@media (max-width: 69.063em) {
+  .hero__title {
+    width: 86%;
+    font-size: var(--fs-tablet-xxl);
+  }
+}
+
+
+@media (max-width: 620px) {
+  .hero__title {
+    width: 95%;
+    font-size: var(--fs-mobile-xxl);
+  }
+
+  .hero-buttons {
+    flex-flow: column wrap;
+  }
+}
+
 /* CALL TO ACTION  */
 /* ================================================================== */
 .cta-banner {
@@ -181,22 +216,34 @@ header {
   line-height: 1.1;
   color: var(--clr-white);
 }
+@media (max-width: 800px) {
+  .cta-banner__title {
+    font-size: var(--fs-tablet-lg);
+  }
+}
+
+
+@media (max-width: 620px) {
+  .cta-banner__title {
+    font-size: var(--fs-mobile-lg);
+  }
+}
+
 
 /* FOOTER */
 /* ================================================================== */
 footer {
   margin-top: 6rem;
-  padding: 5rem 1rem;
+  padding: 5rem 2rem;
 
   background: #0e0e0e;
   color: #ffffff;
 }
 
-
 .footer-nav {
   max-width: 1050px;
   margin: 0 auto;
-  
+
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -227,10 +274,14 @@ footer {
   text-decoration: underline;
 }
 
+.footer-socials {
+  display: flex;
+  gap: .8rem;
+}
+
 .footer-social {
   display: inline-block;
   font-size: 22px;
-  margin-right: .8rem;
 }
 
 .footer-copyright {
@@ -246,14 +297,13 @@ footer {
 @media (max-width: 800px) {
   .footer-nav {
     flex-flow: column wrap;
+    gap: 2rem;
   }
 }
 
 /* ================================================================================================ */
-                                    /* WEBSITE SECTIONS  */  
+/* ............................. WEBSITE SECTIONS ................................................. */
 /* ================================================================================================ */
-
-
 
 /* PLATFORMS  */
 /* ============================================================================================== */
@@ -265,12 +315,14 @@ footer {
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .platforms__title {
   font-size: var(--fs-desktop-lg);
   font-weight: 500;
   margin-bottom: 3.4rem;
+  line-height: 1;
 }
 
 .platforms-images {
@@ -278,20 +330,31 @@ footer {
   margin: 0 auto;
 
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
 }
 
-@media (max-width: 800px) {
-  .platforms-images{
-    flex-flow: column wrap;
+.platform__image {
+  max-width: 128px;
+}
+
+.platform-link{
+  /* width: 20%; */
+}
+
+@media (max-width: 621px) {
+  .platform__image{
+    width: 100%;
   }
 }
-
 
 /* ABOUT SECTION */
 /* ============================================================================================== */
 .about {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .about-wrapper {
@@ -311,10 +374,6 @@ footer {
   flex-flow: row-reverse nowrap;
 }
 
-.about__image {
-  max-width: 620px;
-  object-fit: cover;
-}
 
 .about__title {
   font-size: var(--fs-desktop-xl);
@@ -330,3 +389,53 @@ footer {
   margin-bottom: 3rem;
 }
 
+#about__image--left {
+  width: 50%;
+}
+
+#about__image--right {
+  width: 620px;
+}
+
+
+@media (max-width: 69.063em) {
+  .about-wrapper {
+    gap: 3rem;
+  }
+
+  .about__title {
+    font-size: var(--fs-tablet-xl);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about__info {
+    font-size: var(--fs-tablet-md);
+    margin-bottom: 1.5rem;
+  }
+
+  #about__image--left {
+    /* resetting size when screen size reaches 69.063em */
+    width: 50%;
+  }
+
+  #about__image--right {
+    width: 40%;
+  }
+}
+
+@media (max-width: 49em) {
+  .about-wrapper {
+    flex-flow: column-reverse nowrap;
+    gap: 3rem;
+  }
+
+  #about__image--left {
+    /* resetting size when screen size reaches 69.063em */
+    width: 100%;
+  }
+
+  #about__image--right {
+    width: 100%;
+  }
+
+}
