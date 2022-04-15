@@ -240,6 +240,10 @@ footer {
   color: #ffffff;
 }
 
+.footer-soon-page {
+  margin-top: 0;
+}
+
 .footer-nav {
   max-width: 1050px;
   margin: 0 auto;
