@@ -20,7 +20,6 @@
 */
 /* ========================================================================================= */
 
-
 /* ========================================================================================= */
 /* IMPORTED FONTS  */
 /* ========================================================================================= */
@@ -303,7 +302,6 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
-
 
 /* ========================================================================================= */
 /* ROOT CSS & CSS RESETS  */
@@ -757,5 +755,79 @@ footer {
 
   #about__image--right {
     width: 100%;
+  }
+}
+
+/* ARTICLE SECTION */
+/* ======================================================= */
+.article {
+  width: 100%;
+}
+
+.article__image {
+  width: 199;
+  height: auto;
+}
+
+.article-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.article-info {
+  display: flex;
+  flex-flow: row wrap;
+
+  align-items: center;
+}
+
+.info-header {
+  width: 50%;
+  padding: 5rem 0 10rem 1rem;
+}
+
+.info__title {
+  font-size: var(--fs-desktop-lg);
+  font-weight: 500;
+  color: var(--clr-black);
+  margin-bottom: 1rem;
+}
+
+.info__desc {
+  font-size: var(--fs-desktop-sm);
+  font-weight: 400;
+  color: var(--clr-black);
+}
+
+.info-copy {
+  width: 50%;
+  padding: 9rem 0 5rem 0;
+}
+
+.banners {
+  width: 560px;
+  gap: 1rem;
+}
+
+.sm-banner {
+  display: inline-block;
+  width: 260px;
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+
+  background: #e6f2ed;
+  border-radius: 12px;
+}
+
+.sm-banner__text {
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+
+@media (max-width: 69.063em) {
+  .article-info {
   }
 }
