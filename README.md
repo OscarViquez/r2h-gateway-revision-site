@@ -1,19 +1,8 @@
 # R2H-Gateway-City-Site-Revision
+
+### !!! Screenshots of Google Lighthouse and Audit are at the bottom of this README !!!
 Link to live website
 - https://puerto-vallarta-ohviquez.netlify.app/index.html
-
-### Lighthouse Score: Home Page
-![Lighthouse score for Home Page](/images/readme-audit-index.png)
-### Lighthouse Score: Things To Do Page
-![Lighthouse score for To Do Page](/images/readme-audit-todo.png)
-### Lighthouse Score: Contact Page
-![Lighthouse score for Contact Page](/images/readme-audit-contact.png)
-
-### CSS Valdation
-![CSS Valdation Web Page](/images/readme-w3-valid-css.png)
-
-### HTML Valdation
-![HTML Valdation Web Page](/images/readme-w3-valid-html.png)
 
 
 ### Accessibility Resources / Examples
@@ -58,6 +47,19 @@ I added aria-labels to sections that needed them, based off the Lighthouse audit
 
 ![Image of my figma design file](/images/readme-design-figma-intro.png)
 
+
+### Lighthouse Score: Home Page
+![Lighthouse score for Home Page](/images/readme-audit-index.png)
+### Lighthouse Score: Things To Do Page
+![Lighthouse score for To Do Page](/images/readme-audit-todo.png)
+### Lighthouse Score: Contact Page
+![Lighthouse score for Contact Page](/images/readme-audit-contact.png)
+
+### CSS Valdation
+![CSS Valdation Web Page](/images/readme-w3-valid-css.png)
+
+### HTML Valdation
+![HTML Valdation Web Page](/images/readme-w3-valid-html.png)
 
 
 
