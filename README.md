@@ -3,11 +3,17 @@ Link to live website
 - https://puerto-vallarta-ohviquez.netlify.app/index.html
 
 ### Lighthouse Score: Home Page
-![Image of my figma design file](/images/readme-audit-index.png)
+![Lighthouse score for Home Page](/images/readme-audit-index.png)
 ### Lighthouse Score: Things To Do Page
-![Image of my figma design file](/images/readme-audit-todo.png)
+![Lighthouse score for To Do Page](/images/readme-audit-todo.png)
 ### Lighthouse Score: Contact Page
-![Image of my figma design file](/images/readme-audit-contact.png)
+![Lighthouse score for Contact Page](/images/readme-audit-contact.png)
+
+### CSS Valdation
+![CSS Valdation Web Page](/images/readme-w3-valid-css.png)
+
+### HTML Valdation
+![HTML Valdation Web Page](/images/readme-w3-valid-html.png)
 
 
 ### Accessibility Resources / Examples

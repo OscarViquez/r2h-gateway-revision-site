@@ -337,9 +337,6 @@
   --fs-mobile-lg: 26px;
   --fs-mobile-md: 16px;
 
-  /* IMAGES */
-  --background-hero: ;
-  --background-cta: ;
 }
 
 /* CSS RESET */
@@ -623,6 +620,11 @@ footer {
 .footer-copyright {
   text-align: center;
   margin-top: 5rem;
+}
+
+.footer-copyright > h2 {
+  font-size: var(--fs-desktop-xxs);
+  font-weight: 500;
 }
 
 .footer-copyright p {
