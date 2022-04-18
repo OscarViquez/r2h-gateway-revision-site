@@ -2,7 +2,7 @@
 
 ### !!! Screenshots of Google Lighthouse and Audit are at the bottom of this README !!!
 Link to live website
-- https://puerto-vallarta-ohviquez.netlify.app/index.html
+- https://puerto-vallarta-ohviquez.netlify.app/
 
 
 ### Accessibility Resources / Examples
