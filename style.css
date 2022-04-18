@@ -12,11 +12,11 @@
       |________ Footer
 
   4. ____ Custom CSS for Sections
-      |________ Button
-      |________ Navigation Bar
-      |________ Hero Section / Banner
-      |________ Call to Action Banner
-      |________ Footer
+      |________ 
+      |________ 
+      |________ 
+      |________ 
+      |________ 
 */
 /* ========================================================================================= */
 
@@ -431,7 +431,15 @@ header {
 }
 
 @media (max-width: 620px) {
-  nav {
+  .header-wrapper {
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    margin: 0 .5rem 0 0;
+  }
+
+  .nav__link--hidden {
     display: none;
   }
 }
@@ -762,16 +770,22 @@ footer {
 /* ======================================================= */
 .article {
   width: 100%;
+  padding: 5rem 0;
 }
 
 .article__image {
-  width: 199;
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+
+  height: 450px;
+  object-fit: cover;
 }
 
 .article-wrapper {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 1rem;
 
   display: flex;
   flex-flow: column wrap;
@@ -780,18 +794,21 @@ footer {
 .article-info {
   display: flex;
   flex-flow: row wrap;
-
-  align-items: center;
+  justify-content: space-between;
 }
 
 .info-header {
+  padding: 5rem 0rem;
+}
+
+.info-copy {
   width: 50%;
-  padding: 5rem 0 10rem 1rem;
+  padding: 7rem 0 5rem 0;
 }
 
 .info__title {
   font-size: var(--fs-desktop-lg);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--clr-black);
   margin-bottom: 1rem;
 }
@@ -802,18 +819,21 @@ footer {
   color: var(--clr-black);
 }
 
-.info-copy {
-  width: 50%;
-  padding: 9rem 0 5rem 0;
+.info__link {
+  display: block;
+  margin-top: 1.6rem;
+
+  font-size: var(--fs-desktop-sm);
+  font-weight: 600;
 }
 
 .banners {
+  display: inline-flex;
+  flex-flow: row wrap;
   width: 560px;
-  gap: 1rem;
 }
 
 .sm-banner {
-  display: inline-block;
   width: 260px;
   margin: 0 1rem 1rem 0;
   padding: 1rem;
@@ -827,7 +847,57 @@ footer {
   margin-left: 0.4rem;
 }
 
-@media (max-width: 69.063em) {
+@media (max-width: 72.188em) {
   .article-info {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .info-header {
+    width: 100%;
+    padding: 4rem 0 0 0;
+  }
+
+  .info-copy {
+    width: 100%;
+    padding: 2rem 0 4rem 0;
+  }
+
+  .banners {
+    width: 100%;
+  }
+
+  .sm-banner {
+    width: 45%;
   }
 }
+
+@media (max-width: 583px) {
+  .article {
+    width: 100%;
+    padding: 2.5rem 0;
+  }
+
+  .info__title {
+    font-size: var(--fs-mobile-lg);
+  }
+
+  .sm-banner {
+    width: 100%;
+  }
+
+  .info__desc,
+  .info__link {
+    font-size: var(--fs-desktop-xs);
+  }
+
+  .article__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/* ARTICLE SECTION */
+/* ======================================================= */
