@@ -1,8 +1,10 @@
 # R2H-Gateway-City-Site-Revision
 
 ### !!! Screenshots of Google Lighthouse and Audit are at the bottom of this README !!!
-Link to live website
-- https://puerto-vallarta-ohviquez.netlify.app/
+#### Link to live website &darr;
+https://puerto-vallarta-ohviquez.netlify.app/
+
+![Image of my figma design file](/images/readme-homepage.png)
 
 
 ### Accessibility Resources / Examples
@@ -37,6 +39,8 @@ I looked into websites like Airbnb and Trip Advisors to look how their informati
 I used Figma (https://www.figma.com/design/) to lay out the design before coding it out.
 so I can just focus on accessibilty and semantic html structure when I start coding. 
 
+![Image of my figma design file](/images/readme-design-figma-intro.png)
+
 
 ### The Process: Coding
 While I was coding the HTML Pages, the website I constently used as reference was the (https://www.a11yproject.com/). Main reason being that the whole website was created with Accessibility as their priority. Another reason being how well they scored on lighthouse (All 100% Score). I would specifically observe how they have layed out the semantic elements on the footer. Since the design I chose for my footer was a bit complicated, I had to becareful on how I had it structured for accessibilty and best practice.
@@ -45,7 +49,6 @@ I had problems with Flexbox in my article sections of the To-Do Page. Containers
 
 I added aria-labels to sections that needed them, based off the Lighthouse audit. Changed Image format on larger pictures from png to webp to improve performance. Added a black baground behind images. The black background will be a backup, just in case if image doesnt load and the text needs to be visible.
 
-![Image of my figma design file](/images/readme-design-figma-intro.png)
 
 
 ### Lighthouse Score: Home Page
